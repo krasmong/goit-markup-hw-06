@@ -53,7 +53,8 @@
       <!--Герой-->
       <section class="hero">
         <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-        <a href="" class="button">Заказать услугу</a>
+        <!-- <a href="" class="button">Заказать услугу</a> -->
+        <button class="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!--Преимущества-->
@@ -552,5 +553,19 @@
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
+    <!-- Модальное окно "Заказать услугу" -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          excepturi repellendus impedit voluptatum eaque voluptatem dolor
+          consectetur odio quas ducimus laboriosam vero tempore, vel laborum
+          saepe harum aliquid et amet!
+        </p>
+        <button data-modal-close>закрыть</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
