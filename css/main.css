@@ -403,3 +403,61 @@
 .form-input:not(:placeholder-shown) + .form-label.comment {
   transform: translateY(-35px);
 }
+
+/* Оформление кастомного чек-бокса */
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* .checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-left: 0;
+  margin-right: 8px;
+  background-color: var(--primary-bg-color);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background-origin: border-box;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+}
+
+.agree {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.agree-link {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
